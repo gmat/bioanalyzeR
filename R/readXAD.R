@@ -1,4 +1,4 @@
-extractPreview <- function() {
+extractPreview <- function(file) {
 
     ## read the xad file and identify the tags
     originalLines <- readLines(file)
