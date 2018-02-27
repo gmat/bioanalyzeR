@@ -24,7 +24,7 @@ extractPreview <- function(file) {
     xml <- xmlToList(xmlParse("/tmp/preview.xml"))
 
     writeLines(xml[['GelImage']][['text']], con = "/tmp/image.b64")
-    decode("/tmp/image.b64", "/tmp/image.png")
+    decode("/tmp/image.b64", "/tmp/image.jpg")
     
 }
 
